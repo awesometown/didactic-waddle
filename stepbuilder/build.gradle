@@ -1,0 +1,25 @@
+apply plugin: 'java'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.51"
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.3.RELEASE"
+    }
+}
+
+repositories {
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+apply plugin: 'kotlin'
+apply plugin: "io.spring.dependency-management"
+
+
+dependencies {
+    compile 'com.amazonaws:aws-java-sdk-stepfunctions:1.11.86'
+}
+
