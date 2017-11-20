@@ -61,6 +61,8 @@ functions:
     handler: com.serverless.SubmitJobHandler
   check-job-status:
     handler: com.serverless.CheckJobStatusHandler
+  get-transcodes:
+    handler: com.serverless.GetTranscodesHandler
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
